@@ -6,11 +6,11 @@
     <classes>
       <class name="module1_Login.SwagLabLoginTest">
         <methods>
+          <include name="OpenBrowwser"/>
           <include name="login"/>
           <include name="homepage"/>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- module1_Login.SwagLabLoginTest -->
     </classes>
@@ -20,11 +20,11 @@
     <classes>
       <class name="module1_Login.SwagLabLoginTest">
         <methods>
+          <include name="OpenBrowwser"/>
           <include name="login"/>
           <include name="homepage"/>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- module1_Login.SwagLabLoginTest -->
     </classes>
@@ -34,11 +34,11 @@
     <classes>
       <class name="module1_Login.SwagLabLoginTest">
         <methods>
+          <include name="OpenBrowwser"/>
           <include name="login"/>
           <include name="homepage"/>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- module1_Login.SwagLabLoginTest -->
     </classes>

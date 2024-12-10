@@ -5,11 +5,11 @@
     <classes>
       <class name="module1_Login.SwagLabLoginTest">
         <methods>
+          <include name="OpenBrowwser"/>
           <include name="login"/>
           <include name="homepage"/>
           <include name="logout"/>
           <include name="closeBrowser"/>
-          <include name="OpenBrowwsera"/>
         </methods>
       </class> <!-- module1_Login.SwagLabLoginTest -->
     </classes>

@@ -36,7 +36,7 @@ public class Utility {
 
 	public static String getPFdata(String key) throws IOException
 	{  
-		FileInputStream file=new FileInputStream("C:\\Users\\Hp\\eclipse-workspace\\SauceLab\\PropertyFile.properties");
+		FileInputStream file=new FileInputStream("C:\\Users\\Hp\\git\\SauceLab\\SauceLab\\PropertyFile.properties");
 		Properties p=new Properties();
 		p.load(file);
 		String value= p.getProperty(key);

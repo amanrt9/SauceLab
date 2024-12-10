@@ -21,50 +21,51 @@ public class TestBase
 				
 	public WebDriver driver;
 	
-	//@Parameters("browser")
+	@Parameters("browser")
    
-	public void openBrowser() throws IOException
+	public void openBrowser(String browser) throws IOException
 	{   
-				WebDriverManager.chromedriver().setup();
-			
-				driver=new ChromeDriver();
-				driver.get(Utility.getPFdata("URL"));
-				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//				WebDriverManager.chromedriver().setup();
+//			
+//				driver=new ChromeDriver();
+//				driver.get(Utility.getPFdata("URL"));
+//				driver.manage().window().maximize();
+//				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-//		if(browser==null|| browser.equalsIgnoreCase("chrome")) {
-//		
-//			WebDriverManager.chromedriver().setup();
-//			driver = new ChromeDriver();
-//			driver.get(Utility.getPFdata("URL"));
-//		
-//		}
-//		else if(browser.equalsIgnoreCase("firefox")) 
-//		{
-//		
-//			WebDriverManager.firefoxdriver().setup();
-//			driver = new FirefoxDriver();
-//			driver.get(Utility.getPFdata("URL"));
-//
-//		}
-//		else if(browser.equalsIgnoreCase("edge"))
-//		{
-//	
-//		
-//			WebDriverManager.edgedriver().setup();
-//			driver = new EdgeDriver();
-//			driver.get(Utility.getPFdata("URL"));
-//		
-//		}
-//	
-//	     else 
-//	    {
-//			throw new IllegalArgumentException("Unsupported browser: " + browser);
-//		}
-//		
-//		
-//		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		if(browser==null|| browser.equalsIgnoreCase("chrome")) {
+		
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			//driver.get(Utility.getPFdata("URL"));
+		
+		}
+		else if(browser.equalsIgnoreCase("firefox")) 
+		{
+		
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			//driver.get(Utility.getPFdata("URL"));
+
+		}
+		else if(browser.equalsIgnoreCase("edge"))
+		{
+	
+		
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			//driver.get(Utility.getPFdata("URL"));
+		
+		}
+	
+	     else 
+	    {
+			throw new IllegalArgumentException("Unsupported browser: " + browser);
+		}
+		
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get(Utility.getPFdata("URL"));
 	}
 	
 }

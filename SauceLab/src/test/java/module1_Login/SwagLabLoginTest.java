@@ -29,11 +29,11 @@ public class SwagLabLoginTest extends TestBase
 
 
 	@BeforeClass
-	//@Parameters("browser")
-	public void OpenBrowwsera() throws EncryptedDocumentException, IOException
+    @Parameters("browser")
+	public void OpenBrowwser(String browser) throws EncryptedDocumentException, IOException
 	{
 
-		openBrowser();
+		openBrowser(browser);
 		s=new SwagLabLoginPagePF(driver);
 		h=new SwagLabHomePage(driver);
 		m=new SwagLabMenuPage(driver);
